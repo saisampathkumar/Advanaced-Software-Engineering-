@@ -1,0 +1,83 @@
+    <html>
+    <head>
+        <style>
+             .weatherModule {
+                background: ActiveBorder;
+                height: 70px;
+                width: 100%;
+                border: 1px dashed #ccc;
+                 text-align: center;
+                padding: 1px;
+            }
+            body{
+                padding: 150px;
+                background-image: url("PSX_20170922_224118.jpg");
+                alignment: center;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-size: 1350px 1025px;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    </head>
+    <body>
+    <div ng-app="weather" ng-controller="weatherctrl">
+        <div class="col-md-12 row" style="margin-top: -90px">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <form>
+                    <br/>
+                    <h3><b>ENTER THE STATE CODE</b></h3>
+                    <div class="form-group">
+                        <input type="text" ng-model="state" name="state" placeholder="Enter State Code" />
+                    </div>
+                    <br/>
+                    <h3><b>ENTER THE CITY NAME</b></h3>
+                    <div>
+                        <input type="text" ng-model="city" name="city" placeholder="Enter City Code"/>
+                    </div>
+                    <br/>
+                </form>
+                <button id="btn" ng-click="getWeather()"><b> Show Weather </b> </button>
+                <br/>
+                <br/>
+
+            </div>
+            <div class="col-md-6">
+                <div><b>Current weather in {{city}}
+                </b>
+                </div>
+                <br/>
+                <div class="weatherModule" ng-repeat="weather in weathers">
+                    <br/>
+                    <b>At {{weather.FCTTIME.hour}}:{{weather.FCTTIME.min}} is {{weather.temp.english}} F and {{weather.condition}}
+                        <img ng-src="{{weather.icon_url}}">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        angular.module('weather',[])
+            .controller('weatherctrl', function($scope, $http)
+            {
+                console.log("hi");
+                $scope.getWeather = function() {
+                    var link = 'http://api.wunderground.com/api/4bbbc25f4f5946dd/hourly/q/'+$scope.state+'/'+$scope.city+'.json';
+                    console.log(link);
+                    $http.get(link).success(function(data) {
+                        console.log(data);
+                        $scope.weathers = data.hourly_forecast.splice(0,5);
+                    })
+                }
+
+            });
+    </script>
+    </body>
+    </html>
