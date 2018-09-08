@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <!-- for icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- for header -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <link href="stylesheet/style.css" rel="stylesheet" id="my-css">
+
+</head>
+<br/>
+<body >
+<div ng-app="NutritionApp" ng-controller="NutritionController" >
+        <div class="container" align="center">
+            <div class="jumbotron" align="center">
+                <div class="page-header" style="border-bottom-color: #5cb49e">
+                    <div class="nutritionModule" style="border-radius: 20px">
+                        <br/>
+                        <h1 style="color:white; font-family: 'Times New Roman'"> Nutrition Calculator </h1>
+                            Always anything for you..
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <p class="sizechanger">
+                            <button class="btn btn-warning fa fa-home" style="font-size: 20px; border-radius: 20px" onclick="Home()">
+                                Home
+                            </button>
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <p class="sizechanger">
+                            <button class="btn btn-warning fa fa-cutlery" style="font-size: 20px; border-radius: 20px" onclick="NutritionProviderFunc()">
+                            Nutrition Provider
+                            </button>
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <p class="sizechanger">
+                            <button class="btn btn-warning fa fa-microphone" style="font-size: 20px; border-radius: 20px" onclick="TextToSpeechConverter()" >
+                            Text to speech
+                            </button>
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <p class="sizechanger">
+                            <button class="btn btn-warning fa fa-envelope" style="font-size: 20px; border-radius: 20px" onclick="Contact()">
+                            Contact
+                            </button>
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <p class="sizechanger">
+                            <button class="btn btn-warning fa fa-sign-in" style="font-size: 20px; border-radius: 20px" onclick="Login()" >
+                                Login
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="Display" class="container colourchanger">
+        <p>
+            Welcome to the Nutrition Converter
+        </p>
+    </div>
+    <br/>
+    <div class="container backgrnd" style="border-radius: 20px">
+        <br/>
+            <input type="text" ng-model="dish" class="search-query form-control">
+        <br/>
+        <div style="alignment: center; background-position: center">
+            <button class="btn btn-Primary " ng-click="getNutritionApp()" >Search Item</button>
+            <div ng-controller="SpeechController">
+                <br/>
+                 <button class="btn btn-primary fa fa-play" ng-click="getspeechtotext()" ></button> 
+            </div>
+        </div>
+        <br>
+    </div>
+    <br/>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    <b style="alignment: center; border-radius: 20px">
+        <div class="row container backgrond" ng-repeat="Nutrition in Nutritions" align="center" style="border-radius: 20px" >
+            <table align="centerS">
+                <tr>
+                    <th>Item names:</th>
+                    <th>{{Nutrition.fields.item_name}}</th>
+                </tr>
+                <tr>
+                    <th> Calories: </th>
+                    <th>{{Nutrition.fields.nf_calories}} cals</th>
+                </tr>
+                <tr>
+                    <th>Protein:</th>
+                    <th>{{Nutrition.fields.nf_protein}}</th>
+                </tr>
+                <tr>
+                    <th>cholesterol:</th>
+                    <th>{{Nutrition.fields.nf_cholesterol}}</th>
+                </tr>
+                <tr>
+                    <th>Weight:</th>
+                    <th>{{Nutrition.fields.nf_serving_weight_grams}} gms</th>
+                </tr>
+                <tr>
+                    <th>Total Fat:</th>
+                    <th>{{Nutrition.fields.nf_total_fat}}</th>
+                </tr>
+            </table>
+        </div>
+    </b></div>
+    <div class="col-sm-4"></div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-sm-6">
+        <br/>
+        <p class="phone-info" style="color: white">Call us: <a href="#" style="color: white">(041)234-4523</a></p>
+    </div>
+    <div class="col-sm-6">
+        <br/>
+        <div style="left: 0px" class="social-icons">
+            <div class="col-sm-" style="text-align: right">
+                <a style="color: white" href="#" class="fa fa-facebook"></a>
+                <a class="fa fa-"></a>
+                <a style="color: white" href="#" class="fa fa-instagram"></a>
+                <a class="fa fa-"></a>
+                <a style="color: white" href="#" class="fa fa-twitter"></a>
+                <a class="fa fa-"></a>
+                <a style="color: white" href="#" class="fa fa-sign-out"></a>
+                <a class="fa fa-"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="Java%20Script/scirpted.js"></script>
+
+</html>

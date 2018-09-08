@@ -28,7 +28,7 @@
     <body>
     <div ng-app="weather" ng-controller="weatherctrl">
         <div class="col-md-12 row" style="margin-top: -90px">
-            <div class="col-md-2"></div>
+            <div class="col-md-4"></div>
             <div class="col-md-4">
                 <form>
                     <br/>
@@ -55,7 +55,7 @@
                 <br/>
                 <div class="weatherModule" ng-repeat="weather in weathers">
                     <br/>
-                    <b>At {{weather.FCTTIME.hour}}:{{weather.FCTTIME.min}} is {{weather.temp.english}} F and {{weather.condition}}
+                    <input type="text" value="At {{weather.FCTTIME.hour}}:{{weather.FCTTIME.min}} is {{weather.temp.english}} F and {{weather.condition}}">
                         <img ng-src="{{weather.icon_url}}">
                 </div>
             </div>
