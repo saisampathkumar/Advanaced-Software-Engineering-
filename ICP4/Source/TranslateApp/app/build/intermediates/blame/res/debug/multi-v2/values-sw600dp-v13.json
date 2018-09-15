@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saisa\\Desktop\\Advanced Software Engineering\\Tutorials\\CS5551-Tutorial-4\\TranslateApp\\TranslateApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\saisa\\Documents\\GitHub\\CS5551_41_ICP\\ICP4\\Source\\TranslateApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\saisa\\.gradle\\caches\\transforms-1\\files-1.1\\design-23.2.1.aar\\3e628611135ed4d447ab474b5743ccaa\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

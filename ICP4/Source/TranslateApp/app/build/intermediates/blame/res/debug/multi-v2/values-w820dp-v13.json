@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saisa\\Desktop\\Advanced Software Engineering\\Tutorials\\CS5551-Tutorial-4\\TranslateApp\\TranslateApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "C:\\Users\\saisa\\Documents\\GitHub\\CS5551_41_ICP\\ICP4\\Source\\TranslateApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saisa\\Desktop\\Advanced Software Engineering\\Tutorials\\CS5551-Tutorial-4\\TranslateApp\\TranslateApp\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "C:\\Users\\saisa\\Documents\\GitHub\\CS5551_41_ICP\\ICP4\\Source\\TranslateApp\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saisa\\Desktop\\Advanced Software Engineering\\Tutorials\\CS5551-Tutorial-4\\TranslateApp\\TranslateApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq-rAL\\values-sq-rAL.xml",
+            "outputFile": "C:\\Users\\saisa\\Documents\\GitHub\\CS5551_41_ICP\\ICP4\\Source\\TranslateApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq-rAL\\values-sq-rAL.xml",
             "map": [
                 {
                     "source": "C:\\Users\\saisa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.2.1.aar\\fb1b45ac58aa38417125fd4aaa6ef73a\\res\\values-sq-rAL\\values-sq-rAL.xml",
