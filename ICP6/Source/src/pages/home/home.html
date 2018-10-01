@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-row>
+    <ion-title style="text-align:center">Home</ion-title>
+    <button ion-button color="danger" style="float:right" (click)="loadlogin()">LOGOUT</button>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+<style>
+    .bg
+      {
+        margin: 0;
+        bottom: 0;
+        background: -moz-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%); /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#0264d6), color-stop(100%,#1c2b5a)); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover, #0264d6 1%,#1c2b5a 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(center, ellipse cover, #0264d6 1%,#1c2b5a 100%); /* Opera 12+ */
+        background: -ms-radial-gradient(center, ellipse cover, #0264d6 1%,#1c2b5a 100%); /* IE10+ */
+        background: radial-gradient(ellipse at center, #0264d6 1%,#1c2b5a 100%); /* W3C */
+      }
+  </style>
+<ion-content padding style="text-align:center" class="bg">
+  <h1>Welcome to Accu weather</h1>
+
+  <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/weather-icon.png">
+  
+  <ion-list>
+    <ion-item>
+      <ion-label floating>CITY</ion-label>
+        <ion-input type="text">
+          </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>STATE</ion-label>
+        <ion-input type="text">
+          </ion-input>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
