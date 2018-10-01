@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\resources",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\pages",
+    "\\src\\pages\\about",
+    "\\src\\pages\\contact",
+    "\\src\\pages\\home",
+    "\\src\\pages\\tabs",
+    "\\src\\theme"
+  ],
+  "SelectedNode": "\\src\\pages\\contact\\contact.html",
+  "PreviewInSolutionExplorer": false
+}
