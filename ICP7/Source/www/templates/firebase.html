@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<ion-view title="Firebase Login" style="text-align: center">
+    <ion-content style="background-color:#1c2b5a">
+        <div>
+            <br/>
+            <br/>
+            <div style="align-content: center; text-align: center">
+                <img src="templates/SignImage2.png" style="width: 150px; height:150px; border-radius: 100px"/>
+            </div>
+            <br/>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input ng-model="username" type="text" placeholder="Username" />
+                </label>
+                <label class="item item-input">
+                    <input ng-model="password" type="password" placeholder="Password" />
+                </label>
+            </div>
+            <div class="padding-left padding-right">
+                <div class="button-bar">
+                    <a class="button  fa fa-sign-in " style="font-size: 18px" ng-click="login(username, password)"> Login</a>
+                    <a class="button  fa fa-user-plus " style="font-size: 18px" ng-click="register(username, password)"> Register</a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
