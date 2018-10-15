@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16511b03-69c1-47e8-9b7b-522ab5594c01" name="Default Changelist" comment="" />
+    <list default="true" id="16511b03-69c1-47e8-9b7b-522ab5594c01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Java Script/scirpted.js" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Java Script/scirpted.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP8/.idea/ICP8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP8/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP8/ICP8.html" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -53,23 +62,28 @@
     <session id="1803466198">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/StyleSheet/Style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1242" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,6 +110,8 @@
         <option value="$PROJECT_DIR$/StyleSheet/Style.css" />
         <option value="$PROJECT_DIR$/Java Script/scirpted.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$USER_HOME$/Downloads/CS5551-Tutorial-VIII/Learning Node/Client Server/index.html" />
+        <option value="$PROJECT_DIR$/Source/Java Script/scirpted.js" />
       </list>
     </option>
   </component>
@@ -115,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,18 +139,34 @@
               <item name="ICP3" type="b2602c69:ProjectViewProjectNode" />
               <item name="ICP3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ICP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICP3" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ICP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICP3" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+              <item name="Java Script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ICP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ICP3" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+              <item name="StyleSheet" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="SearchEverywhereHistoryKey" value="Displ&#9;null&#9;null&#10;Display&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Tutorials/CS5551-Tutorial-III" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICP_8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -161,11 +194,12 @@
       <updated>1536276672487</updated>
       <workItem from="1536276674126" duration="41581000" />
       <workItem from="1538835221846" duration="32000" />
+      <workItem from="1539579543726" duration="1488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41613000" />
+    <option name="totallyTimeSpent" value="43101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
@@ -235,8 +269,30 @@
     <entry file="file://$PROJECT_DIR$/Java Script/scirpted.js" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/Source/StyleSheet/Style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1242" />
+        <state relative-caret-position="272">
+          <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#b#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/CS5551-Tutorial-VIII/Learning Node/Client Server/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="124" column="25" lean-forward="true" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Java Script/scirpted.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="45" column="172" selection-start-line="45" selection-start-column="172" selection-end-line="45" selection-end-column="172" />
+        </state>
       </provider>
     </entry>
   </component>

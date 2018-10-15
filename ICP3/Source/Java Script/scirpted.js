@@ -43,7 +43,7 @@ angular.module('NutritionApp',[])
 {
     $scope.getspeechtotext = function ()
     {
-        var link2='https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?username=f61d1286-72ec-4d67-a0a2-16969a62acac&password=4AmGC8jSSy5G&text='+$scope.dish+' ';
+        var link2='https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?username=f61d1286-72ec-4d67-a0a2-16969a62acac&password=4AmGC8jSSy5G&text='+$scope.dish;
         var mySound = new Audio( link2 );
         mySound.play();
     }
