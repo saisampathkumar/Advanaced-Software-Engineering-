@@ -71,7 +71,8 @@
                 $scope.getWeather = function() {
                     var link = 'http://api.wunderground.com/api/4bbbc25f4f5946dd/hourly/q/'+$scope.state+'/'+$scope.city+'.json';
                     console.log(link);
-                    $http.get(link).success(function(data) {
+                    $http.get(link).success(function(data)
+                    {
                         console.log(data);
                         $scope.weathers = data.hourly_forecast.splice(0,5);
                     })
