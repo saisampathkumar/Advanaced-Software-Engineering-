@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Class Programming 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- for icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- for header -->
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+
+    <style>
+
+        body
+            {
+            font-family: Arial;
+            }
+
+        bgimg{
+            background-image: url("abstract-art-artistic-1020315.jpg");
+            background-size: 100% 100%;
+            padding: 25px;
+
+        }
+
+        table {
+            font-family: 'Rock Salt', cursive;
+            border-collapse: collapse;
+            width: 100%;
+            border-style: solid;
+            border-width: 3px;
+            border-left-width: 3px;
+            border-right-width: 3px;
+            border-color: white;
+            border-spacing: 30px 45px;
+        }
+
+        td, th {
+            border: 5px solid #fff;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: #333;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 20px 20px;
+            transition: 0.3s;
+            font-size: 20px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+            color: black;
+            font-size: 25px;
+        }
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ddd;
+            color: black;
+            font-size: 25px;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 20px
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button[type=submit]{
+            width: 100%;
+            background-color: #4CAF50;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            width: 40%;
+            border-radius: 15px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            color: white;
+
+        }
+
+        #example1 {
+            padding: 25px;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+            /*background: url(New-Blue-Background-Main-2.jpg);*/
+            background-repeat: no-repeat;
+            background-size: 1920px 1080px;
+        }
+    </style>
+</head>
+<body id="example1" ng-app="StudentDetails" ng-controller="StudentDetailsController">
+    <div class="tab">
+        <button class="tablinks" id="pageload" href="#home" onclick="openCity(event,'home')">Home</button>
+        <button class="tablinks" href="#DisplayDetails tablinks" onclick="openCity(event,'DisplayDetails')">Search</button>
+    </div>
+<br/>
+    <div id="home" style="width: 100%" align="center" class="tabcontent"`>
+        <form  class="container" ng-submit="insertData()" style="align-self: center;width: 40%; background-color: #333; border-color: white;font-size: 20px" >
+            <label for="classId" style="color: white;float:left;"><b>Class ID</b></label>
+            <br/>
+            <input type="text" id="classId" style="color: black" name="classId" ng-model="fData.classId" placeholder="Class Id...">
+
+
+            <label for="firstName" style="color: white;float:left;"><b>First Name</b></label>
+            <br/>
+            <input type="text" style="color: black" id="firstName" name="firstName" ng-model="fData.firstName" placeholder="Your First name..">
+
+
+            <label for="lastName" style="color: white;float: left"><b>Last Name</b></label>
+            <br/>
+            <input type="text" style="color: black" id="lastName" name="lastName" ng-model="fData.lastName" placeholder="Your Last name..">
+
+            <label for="contact" style="color: white;float: left"><b>Contact</b></label>
+            <br/>
+            <input type="text" style="color: black" id="contact" name="contact" ng-model="fData.contact" placeholder="Your Contact..">
+
+            <label for="branchName" style="color: white;float: left"><b>Branch Name</b></label>
+            <br/>
+            <input type="text" style="color: black" id="branchName" name="branchName" ng-model="fData.branchName" placeholder="Branch Name..">
+
+            <label for="major" style="color: white;float: left"><b>Major</b></label>
+            <br/>
+            <select id="major" name="major" ng-model="fData.major" style="color: black">
+                <option>Select an Option..</option>
+                <option value="UnderGraduate">Bachelors</option>
+                <option value="Masters">Masters</option>
+                <option value="PhD">PhD</option>
+                <option value="PostGraduate">PostGraduate</option>
+            </select>
+
+            <label for="major" style="color: white;float: left"><b>Minor</b></label>
+            <br/>
+            <select id="minor" name="minor" ng-model="fData.minor" style="color: black">
+                <option>Select an Option..</option>
+                <option value="DataScience">Data Science</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Database and Information Management">Database and Information Management</option>
+                <option value="Bioinformatics">Bioinformatics</option>
+                <option value="Networking and Telecommunications">Networking and Telecommunications</option>
+            </select>
+            <input type="submit" value="Submit" style="width: 200px;font-size: 20px" >
+        </form>
+    </div>
+
+    <div id="DisplayDetails" style="width: 100%" align="center" class="tabcontent">
+        <form class="container" style="align-self: center;width: 40%;background-color: #333" >
+            <p for="fclassIdSearch" style="color: white;float: left ; font-size: 25px"><b>Fetch Student Details</b></p>
+            <br/>
+            <br/>
+            <input id="Searchmodel" name="Searchmodel" ng-model="Searchmodel" type="text" style="color: black;float: left " placeholder="Enter Major....">
+            <br/>
+            <div ng-app="StudentDetails">
+                <button id="classIdSearch" type="submit" ng-click="fetchData()" style="width: 200px;font-size: 20px">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div ng-if="studs" id="Result" style="width: 100%;border-radius: 10px" align="center" >
+        <table class="container" style="align-self: center;width: 90%; background-color: #333; border-color: white;font-size: 20px" >
+            <tr >
+                <td>
+                    <p style="color: white;float:left;"><b>Class ID</b></p>
+                </td>
+                <td>
+                    <p style="color: white;float:left;"><b>First Name</b></p>
+                </td>
+                <td>
+                    <p style="color: white;float: left"><b>Last Name</b></p>
+                </td>
+                <td>
+                    <p style="color: white;float: left"><b>Contact</b></p>
+                </td>
+                <td>
+                    <p style="color: white;float: left"><b>Major</b></p>
+                </td>
+                <td>
+                    <p style="color: white;float: left">Minor</p>
+                </td>
+                <td>
+                    <p style="color: white;float: left"><b>Course of Study</b></p>
+                </td>
+            </tr>
+            <tr ng-repeat="response in studs">
+                <td>
+                    {{response.class_id}}
+                </td>
+                <td>
+                    {{response.Student_first_name}}
+                </td>
+               <td>
+                   {{response.student_last_name}}
+               </td>
+                <td>
+                    {{response.contact}}
+                </td>
+                <td>
+                    {{response.branch_name}}
+                </td>
+                <td>
+                    {{response.minor}}
+                </td>
+                <td>
+                    {{response.major}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    function openCity(evt, formDisp) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(formDisp).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+        // .controller('StudentDetailsController',function ($scope,$http)
+        // {
+        //     console.log("welcome to Student Details Fetcher");
+        //     $scope.getStudentDetails = function ()
+        //     {
+        //         document.getElementById('Result').style.display='block';
+        //         var link1='';
+        //         console.log(link1);
+        //         $http.get(link1).success(function (data)
+        //         {
+        //             console.log(data);
+        //             $scope.Studs = data.hits;
+        //         });
+        //     }
+
+
+    var myapp = angular.module('StudentDetails',[]);
+
+
+    document.getElementById('pageload').click();
+
+    myapp.run(function ($http) {
+        // Sends this header with any AJAX request
+        $http.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+        // Send this header only in post requests. Specifies you are sending a JSON object
+        $http.defaults.headers.post['dataType'] = 'json'
+    });
+
+    myapp.controller('StudentDetailsController',function($scope,$http){
+        $scope.insertData = function(){
+            console.log($scope.fData.classId);
+            console.log($scope.fData.firstName);
+            console.log($scope.fData.lastName);
+            console.log($scope.fData.contact);
+            console.log($scope.fData.branchName);
+            console.log($scope.fData.major);
+            console.log($scope.fData.minor);
+            var dataParams = {
+                'classId' : $scope.classId,
+                'studentFirstName' : $scope.firstName,
+                'studentLastName' : $scope.lastName,
+                'contact' : $scope.contact,
+                'branchName': $scope.branchName,
+                'major' : $scope.major,
+                'minor' : $scope.minor,
+            };
+            var config = {
+                headers : {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                }
+            }
+            var req = $http.post('http://127.0.0.1:3000/student/create',$scope.fData);
+            req.success(function(data, status, headers, config) {
+                $scope.message = data;
+                console.log(data);
+                alert("Details are saved Successfully saved in MongoDB");
+            });
+            req.error(function(data, status, headers, config) {
+                alert( "failure message: " + JSON.stringify({data: data}));
+                console.log(data);
+            });
+    };
+        $scope.fetchData = function(){
+            var request=$http.get('http://127.0.0.1:3000/student/search?major='+$scope.Searchmodel);
+            request.success(function(data, status, headers, config) {
+                $scope.studs = data.data;
+                console.log(data);
+            });
+            request.error(function(data, status, headers, config) {
+                alert( "failure message: " + JSON.stringify({data: data}));
+            });
+        }
+    });
+
+</script>
+</html>
