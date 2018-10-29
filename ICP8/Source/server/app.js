@@ -13,6 +13,10 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.get('/', function (req, res) {
+    res.sendfile(path.join(__dirname, 'public', 'client.html'));
+}
+);
 //app.use(cors);
 app.use(logger('dev'));
 app.use(express.json());

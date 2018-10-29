@@ -131,7 +131,7 @@
       console.log("hi");
       $scope.getMedicine = function()
       {
-        var link = 'http://127.0.0.1:3000/api/rxlist?q='+$scope.mkeyword;
+        var link = '/api/rxlist?q='+$scope.mkeyword;
         console.log(link);
         $http.get(link).success(function(data) {
           console.log(data);
